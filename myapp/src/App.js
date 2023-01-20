@@ -52,6 +52,8 @@ function App() {
 
       <br />
 
+      <h1>Todo List</h1>
+
       <form onSubmit={handleSubmit}>
         <input
           type="text"
@@ -94,7 +96,7 @@ function App() {
                     }
                   >
                     Delete
-                  </button>
+                  </button>{v.complete ? <p className="donep"> Done </p> :null}
                 </li>
               </>
             );
